@@ -15,7 +15,7 @@ Hay que crear un perfil ya que implementa autenticación de usuarios y hace uso 
 2. Crear y activar el entorno virtual.
  Dentro de la carpeta que se creará el Entorno Virtual: python -m venv env
  Para activarlo:
- Linux: python -m venv entorno source env/bin/activate
+ Linux: source env/bin/activate
  En Windows: env\Scripts\activate
 
 4. Instalar las dependencias.
