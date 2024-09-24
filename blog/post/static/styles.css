@@ -1,0 +1,117 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navegación */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: black; /* Cambiado a negro para mejorar la legibilidad */
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Publicaciones */
+.post {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.post h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Botones */
+button {
+    background: #3498db; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9; /* Color de fondo al pasar el mouse */
+}
+
+/* Formulario */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+}
+
+/* Otros Estilos */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background: #2c3e50;
+    color: white;
+    border-radius: 8px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
