@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content }}</p>
+    <p><strong>Publicado por:</strong> {{ post.author }}</p>
+    <p><strong>Fecha de publicación:</strong> {{ post.pub_date }}</p>
+    {% if post.author == user %}
+        <a href="{% url 'post_edit' post.id %}">Editar</a>
+        <form method="POST" action="{% url 'post_delete' post.id %}">
+            {% csrf_token %}
+            <button type="submit">Eliminar</button>
+        </form>
+    {% endif %}
+{% endblock %}
